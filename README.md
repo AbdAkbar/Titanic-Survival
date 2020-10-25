@@ -11,7 +11,7 @@ The first RandomForestClassifier model that I created myself had the following k
 
 I then ran a logistic regression model with identical features and training data, and received a slightly worse score.
 
-For subsequent submissions, instead of creating dummy variables for 'Sex' and 'Embarked' I simply mapped these categories to numerical values. Furthermore, I split 'Age' into 5 categories instead of 4. These changes improved my score marningally.
+For subsequent submissions, instead of creating dummy variables for 'Sex' and 'Embarked' I simply mapped these categories to numerical values. Furthermore, I split 'Age' into 5 categories instead of 4. These changes slightly improved my score.
 
 I then implemented a nested loop for hyperparameter tuning. The two hyperparameters I tuned were 'min_samples_split' and 'min_samples_leaf'. Furthermore, I manually tried different values for 'n_estimators'. Initially, I had incorporated this hyperparameter into my tuning as well, however this caused the program to run for too long. With the incorporation of this tuning, I was able to acheive my highest submission scores.
 
