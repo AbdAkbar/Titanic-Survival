@@ -15,4 +15,4 @@ For subsequent submissions, instead of creating dummy variables for 'Sex' and 'E
 
 I then implemented a nested loop for hyperparameter tuning. The two hyperparameters I tuned were 'min_samples_split' and 'min_samples_leaf'. Furthermore, I manually tried different values for 'n_estimators'. Initially, I had incorporated this hyperparameter into my tuning as well, however this caused the program to run for too long. With the incorporation of this tuning, I was able to acheive my highest submission scores.
 
-In later versions of my model, I used a GridSearchCV method for hyperparameter tuning instead of a nested loop.
+In later versions of my model, I used a GridSearchCV method for hyperparameter tuning instead of a nested loop, however this did not improve my score. I also utilized grid search with an XGBClassifier inseat of a RandomForestClassifier, but again, this did not improve my score. Apparently, minimizing the oob_score in the nested loop produces more accurate hyperparameters then the predefined accuracy measures in GridSearchCV. This makes sense, as oob_score is generally a more pessimistic estimator of accuracy.
